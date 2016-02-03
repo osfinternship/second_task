@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <!-- Parent -->
+  <parent>
+    <groupId>TestMultiple</groupId>
+    <artifactId>TestMultiple</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  
+  <groupId>TestWebModule2</groupId>
+  <artifactId>TestWebModule2</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>TestWebModule2 Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <!-- Dependencies -->
+  <dependencies>
+  
+  	<!-- Include module TestModule1 -->
+  	<dependency>
+  		<groupId>TestModule1</groupId>
+  		<artifactId>TestModule1</artifactId>
+  		<version>1.0-SNAPSHOT</version>
+  	</dependency>
+  
+  </dependencies>
+  <build>
+    <finalName>TestWebModule2</finalName>
+  </build>
+</project>
